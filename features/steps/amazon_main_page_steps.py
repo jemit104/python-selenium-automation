@@ -40,8 +40,7 @@ def wait_sec(context, seconds):
 
 @then('Verify hamburger menu btn present')
 def verify_ham_menu(context):
-    ham_menu = context.driver.find_element(*HAM_MENU_BTN)
-    ham_menu.click()
+    context.driver.find_element(*HAM_MENU_BTN)
 
 
 @then('Verify there are {expected_amount} footer links')
